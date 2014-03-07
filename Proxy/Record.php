@@ -5,7 +5,7 @@ namespace DesignPatterns\Proxy;
 /**
  * class Record
  */
-class Record
+class Record implements RecordInterface
 {
     /**
      * @var array|null

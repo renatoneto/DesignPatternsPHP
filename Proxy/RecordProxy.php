@@ -5,33 +5,32 @@ namespace DesignPatterns\Proxy;
 /**
  * Class RecordProxy
  */
-class RecordProxy extends Record
+class RecordProxy implements RecordInterface
 {
-    /**
-     * @var bool
-     */
-    protected $isDirty = false;
 
     /**
-     * @var bool
+     * @var RecordInterface The record instance to proxy to
      */
-    protected $isInitialized = false;
+    protected $record;
 
     /**
-     * @param array $data
+     * @param RecordInterface $record
      */
-    public function __construct($data)
+    public function __construct(RecordInterface $record)
     {
-        parent::__construct($data);
+        $this->record = $record;
+    }
 
-        // when the record has data, mark it as initialized
-        // since Record will hold our business logic, we don't want to
-        // implement this behaviour there, but instead in a new proxy class
-        // that extends the Record class
-        if (null !== $data) {
-            $this->isInitialized = true;
-            $this->isDirty = true;
-        }
+    /**
+     * magic getter
+     *
+     * @param string $name
+     *
+     * @return mixed
+     */
+    public function __get($name)
+    {
+        return $this->record->$name;
     }
 
     /**
@@ -44,7 +43,6 @@ class RecordProxy extends Record
      */
     public function __set($name, $value)
     {
-        $this->isDirty = true;
-        parent::__set($name, $value);
+	$this->record->$name = $value;
     }
 }

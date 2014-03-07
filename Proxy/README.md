@@ -2,7 +2,13 @@
 
 ## Purpose
 
-To interface to anything that is expensive or impossible to duplicate.
+To provide a placeholder object that takes the place of another object. In practice, there are several reasons for doing this:
+
+1. To delay creation of an expensive object until absolutely necessary. (See the RecordVirtualProxy class).
+
+2. To transparently control access to another object. (See the RecordProtectingProxy class)
+
+3. To represent a remote resource on another system. (an example would require a significant amount of code)
 
 ## Examples
 
