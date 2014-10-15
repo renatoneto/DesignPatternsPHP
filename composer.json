@@ -1,20 +1,21 @@
 {
-    "name": "domnikl/design-patterns-php",
+    "name": "renatoneto/design-patterns-php",
     "description": "Sample code for several design patterns in PHP",
     "authors": [
         {
             "name": "Dominik Liebler",
             "email": "liebler.dominik@googlemail.com"
+        },
+        {
+            "name": "Renato Neto",
+            "email": "skapemr@gmail.com"
         }
     ],
     "minimum-stability": "stable",
-    "require-dev": {
-        "phpunit/phpunit": "3.7.*",
-        "squizlabs/php_codesniffer": "1.5.*"
-    },
     "autoload": {
         "psr-4": {
-            "DesignPatterns\\": ""
+            "DesignPatterns\\": "DesignPatterns/",
+            "Skp\\": "Skp/"
         }
     }
 }
