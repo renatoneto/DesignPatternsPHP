@@ -1,10 +1,11 @@
 # DesignPatternsPHP
 
-Repositório para estudos de Design Patterns utilizando como base o projeto [DesignPatternsPHP](https://github.com/ircmaxell/DesignPatternsPHP)
+Repositório para estudos de Design Patterns utilizando como base o projeto [DesignPatternsPHP](https://github.com/ircmaxell/DesignPatternsPHP).
 
-## Patterns
+## Organizando o catálogo
 
-The patterns can be structured in roughly three different categories. Please click on the :notebook: for a full explanation of the pattern on Wikipedia.
+Como existem muitos padrões de projeto, necessitamos de uma maneira de organizá-los. A classificação ajuda a aprender os padrões mais rapidamente, bem como direcionar esforços na descoberta de novos.
+Os padrões podem ter finalidade de criação, estrutural ou comportamental. Os padrões de criação se preocupam com o processo de criação de objetos. Os padrões estruturais lidam com a composição de classes ou de objetos. Os padrões comportamentais caracterizam as maneiras pelas quais classes ou objetos interagem e distribuem responsabilidades. (Retirado do livro Padrões de Projeto - GoF)
 
 ### De criação
 
@@ -44,4 +45,4 @@ The patterns can be structured in roughly three different categories. Please cli
 * [Visitor](Visitor)
 
 ### Outros
-* [Delegation](Delegation) [:notebook:](http://en.wikipedia.org/wiki/Delegation_pattern)
+* [Delegation](Delegation)
