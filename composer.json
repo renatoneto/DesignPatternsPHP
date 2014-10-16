@@ -14,7 +14,6 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "DesignPatterns\\": "DesignPatterns/",
             "Skp\\": "Skp/"
         }
     }
